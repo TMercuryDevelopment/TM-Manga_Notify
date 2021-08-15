@@ -1,16 +1,54 @@
-# manga_notify
+# MyMangaNotify
 
-A new Flutter project.
+The objective of this project is creating a mobile app to manage mangas, where the final user can choose the work  that he is accompanying and define the releases dates, for be notified whenever the release date come about this work.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## 📱Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  
+## ✍ Installation
+``` to be updated ```
+    
+## ✔ Running Tests
+
+To run tests, run the following command
+
+```bash
+  flutter test --coverage
+```
+
+  
+## 👋 Contributing
+
+Contributions are always welcome!
+
+
+  
+## 📋 Version
+
+ - 0.0.1v
+  
+## 🙍‍♂️ Authors
+
+- [@Yhan Nunes (Idealization)](https://www.github.com/Yhan17)
+- [@Júlio César (Developer)](https://www.github.com/JulCzar)
+- [@Davi Moras (Developer)](https://www.github.com/Davi-zzz)
+- [@Rafael Augusto (Developer)](https://www.github.com/Anotherafael)
+
+  
+## 🖊 License
+
+This project have the following [EULA](https://choosealicense.com/licenses/mit/)
+
+  
+## 🍅 Feedback
+
+If you have any feedback, please reach out to us at teammercurydev@gmail.com
+
+  
+## 👍 Thanks
+
+- 4 u
