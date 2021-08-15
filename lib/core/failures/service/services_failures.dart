@@ -1,11 +1,5 @@
 import '../failures.dart';
 
-class NullParamFailure extends ServiceFailure {
-  @override
-  List<Object?> get props => throw UnimplementedError();
-}
+class InvalidList extends ServiceFailure {}
 
-class UnsavedListFailure extends ServiceFailure {
-  @override
-  List<Object?> get props => throw UnimplementedError();
-}
+class DevicePermissionDenied extends ServiceFailure {}

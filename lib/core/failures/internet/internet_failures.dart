@@ -1,21 +1,9 @@
 import '../failures.dart';
 
-class BadRequestFailure extends InternetFailure {
-  @override
-  List<Object?> get props => throw UnimplementedError();
-}
+class BadRequestFailure extends InternetFailure {}
 
-class NotFoundFailure extends InternetFailure {
-  @override
-  List<Object?> get props => throw UnimplementedError();
-}
+class NotFoundFailure extends InternetFailure {}
 
-class TimeOutFailure extends InternetFailure {
-  @override
-  List<Object?> get props => throw UnimplementedError();
-}
+class TimeOutFailure extends InternetFailure {}
 
-class TooManyRequestFailure extends InternetFailure {
-  @override
-  List<Object?> get props => throw UnimplementedError();
-}
+class TooManyRequestFailure extends InternetFailure {}

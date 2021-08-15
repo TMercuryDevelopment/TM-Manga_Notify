@@ -1,7 +1,5 @@
-import 'package:equatable/equatable.dart';
+abstract class Failure {}
 
-abstract class Failure extends Equatable {}
+class InternetFailure extends Failure {}
 
-abstract class InternetFailure extends Failure {}
-
-abstract class ServiceFailure extends Failure {}
+class ServiceFailure extends Failure {}
