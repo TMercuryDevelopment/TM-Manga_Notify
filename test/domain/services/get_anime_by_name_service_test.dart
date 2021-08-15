@@ -1,9 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:manga_notify/core/domain/entities/manga_entity.dart';
-import 'package:manga_notify/core/domain/repositories/manga_repository.dart';
-import 'package:manga_notify/core/domain/services/get_anime_by_name_service.dart';
-import 'package:manga_notify/core/failures/failures.dart';
+import 'package:manga_notify/core/shared/domain/entities/manga_entity.dart';
+import 'package:manga_notify/core/shared/domain/repositories/manga_repository.dart';
+import 'package:manga_notify/core/shared/domain/services/get_anime_by_name_service.dart';
+import 'package:manga_notify/core/shared/failures/failures.dart';
+
 import 'package:mockito/mockito.dart';
 
 import 'mocks/anime_list_mock.dart';

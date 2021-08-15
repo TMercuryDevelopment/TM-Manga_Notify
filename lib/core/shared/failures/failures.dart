@@ -1,4 +1,4 @@
-abstract class Failure {}
+abstract class Failure implements Exception{}
 
 class InternetFailure extends Failure {}
 

@@ -1,4 +1,4 @@
-import 'package:manga_notify/core/domain/entities/manga_entity.dart';
+import 'package:manga_notify/core/shared/domain/entities/manga_entity.dart';
 
 final animeListMock = [
   MangaEntity(
