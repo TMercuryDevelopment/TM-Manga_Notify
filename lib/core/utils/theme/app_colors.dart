@@ -8,4 +8,5 @@ class AppColors {
   static Color get secondaryAlt => const Color(0xFF6592FD);
   static Color get aux => const Color(0xFF44C2FD);
   static Color get auxAlt => const Color(0xFF8C61FF);
+  static Color get auxAlt35 => const Color(0xFF8C61FF).withOpacity(0.35);
 }

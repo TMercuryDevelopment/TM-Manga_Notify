@@ -1,7 +1,7 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/features/schedules_manga/presentation/schedules_manga_page.dart';
+import '../../../../../core/features/search/presentation/search_page.dart';
 import '../../../../../core/utils/theme/app_colors.dart';
 
 class SplashPage extends StatelessWidget {
@@ -16,7 +16,8 @@ class SplashPage extends StatelessWidget {
         width: 300,
         height: 300,
       ),
-      nextScreen: SchedulesMangaPage(),
+      nextScreen: SearchPage(),
+      // nextScreen: SchedulesMangaPage(),
       splashTransition: SplashTransition.fadeTransition,
     );
   }

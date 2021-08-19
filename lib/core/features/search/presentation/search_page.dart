@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
-import '../../../widgets/appbar/appbar_widget.dart';
-import '../widgets/card_item_widget.dart';
 
 import '../../../utils/theme/app_colors.dart';
-import '../widgets/schedules_manga_fonts.dart';
+import '../../schedules_manga/widgets/card_item_widget.dart';
+import '../../../widgets/appbar/appbar_widget.dart';
+import '../widgets/search_widget.dart';
 
-class SchedulesMangaPage extends StatefulWidget {
-  const SchedulesMangaPage({Key? key}) : super(key: key);
+class SearchPage extends StatefulWidget {
+  const SearchPage({Key? key}) : super(key: key);
 
   @override
-  _SchedulesMangaPageState createState() => _SchedulesMangaPageState();
+  _SearchPageState createState() => _SearchPageState();
 }
 
-class _SchedulesMangaPageState extends State<SchedulesMangaPage> {
+class _SearchPageState extends State<SearchPage> {
+  String query = '';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,23 +24,7 @@ class _SchedulesMangaPageState extends State<SchedulesMangaPage> {
           height: 100,
           padding: const EdgeInsets.symmetric(horizontal: 20),
           width: double.maxFinite,
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.calendar_today,
-                size: 32,
-                color: AppColors.auxAlt,
-              ),
-              Container(
-                padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
-                child: Text(
-                  "Agendados",
-                  style: ScheduleFonts.appbarTitle,
-                ),
-              ),
-            ],
-          ),
+          child: buildSearch(),
         ),
       ),
       backgroundColor: AppColors.primaryColor,
@@ -63,4 +49,10 @@ class _SchedulesMangaPageState extends State<SchedulesMangaPage> {
       ),
     );
   }
+
+  Widget buildSearch() => SearchWidget(
+        text: query,
+        hintText: 'Pesquisar',
+        onChanged: (_) {},
+      );
 }
