@@ -2,10 +2,9 @@ import 'package:dartz/dartz.dart';
 
 import '../../failures/failures.dart';
 
-abstract class BaseService<Output, Input> {
+abstract class IBaseService<Output, Input> {
   Future<Either<Failure, Output>?> call(Input attr);
 }
-
-class NoInput {
-  const NoInput();
+abstract class IVoidBaseService<Output> {
+  Future<Either<Failure, Output>?> call();
 }

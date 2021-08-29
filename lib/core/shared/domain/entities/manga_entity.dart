@@ -11,6 +11,8 @@ class MangaEntity extends Equatable {
   final String? description;
   final String? coverColor;
   final String? englishName;
+  final int? weekDay;
+  final int? weekOfMonth;
 
   const MangaEntity({
     required this.id,
@@ -23,6 +25,8 @@ class MangaEntity extends Equatable {
     this.chapters,
     this.coverColor,
     this.englishName,
+    this.weekDay,
+    this.weekOfMonth,
   });
 
   @override
@@ -37,5 +41,7 @@ class MangaEntity extends Equatable {
         nativeName,
         description,
         englishName,
+        weekDay,
+        weekOfMonth,
       ];
 }

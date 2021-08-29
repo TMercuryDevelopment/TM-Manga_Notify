@@ -12,6 +12,8 @@ class MangaModel extends MangaEntity {
     String? description,
     String? coverColor,
     String? englishName,
+    int? weekDay,
+    int? weekOfMonth,
   }) : super(
           id: id,
           name: name,
@@ -23,6 +25,8 @@ class MangaModel extends MangaEntity {
           popularity: popularity,
           description: description,
           englishName: englishName,
+          weekDay: weekDay,
+          weekOfMonth: weekOfMonth,
         );
 
   factory MangaModel.fromJson(Map<String, dynamic> json) => MangaModel(

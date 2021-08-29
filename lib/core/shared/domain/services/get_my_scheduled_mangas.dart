@@ -1,22 +1,20 @@
 import 'package:dartz/dartz.dart';
+import 'package:manga_notify/core/shared/domain/services/base_service.dart';
 
 import '../../failures/failures.dart';
 import '../entities/manga_entity.dart';
 import '../repositories/manga_repository.dart';
-import 'base_service.dart';
 
-class GetMyScheduledMangas
-    implements BaseService<List<MangaEntity>, List<int>> {
+class GetMyScheduledMangas implements IVoidBaseService<List<MangaEntity>> {
   final MangaRepository repository;
 
   GetMyScheduledMangas(this.repository);
 
-  @override
-  Future<Either<Failure, List<MangaEntity>>> call(List<int> attr) async {
-      final result = await repository.getScheduledMangas(attr);
-      if (result!.isRight()) {
-        return result;
-      }
-      return Left(ServiceFailure());
+  Future<Either<Failure, List<MangaEntity>>> call() async {
+    final result = await repository.getScheduledMangas();
+    if (result!.isRight()) {
+      return result;
+    }
+    return Left(ServiceFailure());
   }
 }
