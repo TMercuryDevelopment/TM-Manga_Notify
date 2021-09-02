@@ -1,16 +1,16 @@
 import 'package:dartz/dartz.dart';
-import 'package:manga_notify/core/shared/domain/entities/manga_entity.dart';
-import 'package:manga_notify/core/shared/domain/repositories/manga_repository.dart';
-import 'package:manga_notify/core/shared/failures/failures.dart';
+import '../entities/manga_entity.dart';
+import '../repositories/manga_repository.dart';
+import '../../failures/failures.dart';
 
 import 'base_service.dart';
 
-class DeleteMangaService implements IBaseService<MangaEntity,MangaEntity> {
+class DeleteMangaService implements IBaseService<MangaEntity, MangaEntity> {
   final MangaRepository repository;
 
   DeleteMangaService(this.repository);
 
-  Future<Either<Failure,MangaEntity>> call(MangaEntity manga) async {
+  Future<Either<Failure, MangaEntity>> call(MangaEntity manga) async {
     final result = await repository.updateManga(manga);
     if (result!.isRight()) {
       return result;
