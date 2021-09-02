@@ -1,8 +1,7 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/features/search/presentation/search_page.dart';
-import '../../../../../core/utils/theme/app_colors.dart';
+import '../../../../../core/shared/utils/theme/app_colors.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -16,9 +15,19 @@ class SplashPage extends StatelessWidget {
         width: 300,
         height: 300,
       ),
-      nextScreen: SearchPage(),
-      // nextScreen: SchedulesMangaPage(),
+      nextScreen: RedirectPage(),
       splashTransition: SplashTransition.fadeTransition,
+    );
+  }
+}
+
+class RedirectPage extends StatelessWidget {
+  const RedirectPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: AppColors.secondaryColor,
     );
   }
 }
