@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../shared/utils/theme/app_colors.dart';
-import 'search_fonts.dart';
+
 import '../../../utils/theme/app_colors.dart';
+import '../../../utils/theme/app_colors.dart';
+import 'search_fonts.dart';
 
 class SearchWidget extends StatefulWidget {
   final String text;
@@ -31,7 +32,7 @@ class _SearchWidgetState extends State<SearchWidget> {
       height: 57,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: AppColors.auxAlt,
+        color: AppColors.auxAlt35,
       ),
       padding: EdgeInsets.symmetric(horizontal: 20),
       child: Center(

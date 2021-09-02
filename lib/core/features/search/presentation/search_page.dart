@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../shared/utils/theme/app_colors.dart';
+import '../../../utils/theme/app_colors.dart';
 
 import '../../../utils/theme/app_colors.dart';
 import '../../schedules_manga/widgets/card_item_widget.dart';

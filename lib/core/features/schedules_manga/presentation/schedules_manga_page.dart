@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../shared/utils/theme/app_colors.dart';
 
+import '../../../utils/theme/app_colors.dart';
 import '../../../utils/theme/app_colors.dart';
 import '../../../widgets/appbar/appbar_widget.dart';
 import '../widgets/card_item_widget.dart';
