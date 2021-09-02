@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:manga_notify/core/shared/domain/entities/manga_entity.dart';
-import 'package:manga_notify/core/shared/domain/repositories/manga_repository.dart';
-import 'package:manga_notify/core/shared/failures/failures.dart';
+import '../entities/manga_entity.dart';
+import '../repositories/manga_repository.dart';
+import '../../failures/failures.dart';
 
 import 'base_service.dart';
 

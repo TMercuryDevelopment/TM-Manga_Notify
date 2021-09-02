@@ -1,7 +1,6 @@
 import 'package:dartz/dartz.dart';
-
-import '../../failures/failures.dart';
-import '../entities/manga_entity.dart';
+import '../../shared/domain/entities/manga_entity.dart';
+import '../../shared/failures/failures.dart';
 
 abstract class MangaRepository {
   Future<Either<Failure, MangaEntity>> getMangaDetails(int id);

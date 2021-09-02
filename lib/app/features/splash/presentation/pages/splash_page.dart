@@ -1,5 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import '../../../../../core/features/search/presentation/search_page.dart';
 
 import '../../../../../core/shared/utils/theme/app_colors.dart';
 
